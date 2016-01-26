@@ -88,7 +88,7 @@ def parse_attachment(message_part, ip, date):
                 os.chmod(subdir_year,0777)
                 subdir_day = subdir_year + '/' + date.strftime("%d")
                 os.chmod(subdir_day,0777)
-                print('cant find directory: ',dir,', creating done with: ', os.path.exists(dir))
+                # print('cant find directory: ',dir,', creating done with: ', os.path.exists(dir))
             filedir = dir + '/' +attachment.name
             print ('find file in mail - save:',filedir)
             file = open(filedir, 'w+')
